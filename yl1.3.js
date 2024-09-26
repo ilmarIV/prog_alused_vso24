@@ -1,4 +1,13 @@
-let alus = 2
-let astendaja = 4
-let vastus = alus**astendaja
-console.log(vastus)
+const readline = require('node:readline')
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+})
+
+rl.question('sisestage astme alus: ', astmeAlus => {
+    rl.question('sisestage astendaja: ', astendaja => {
+        let vastus = astmeAlus**astendaja
+        console.log(vastus)
+        rl.close()
+    })
+})
