@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 
 rl.question('sisestage 6ppeaine ainepunktide arv: ', ainepunktid => {
     rl.question('sisestage ]ppeaine n2dalate arv: ', n2dalad => {
-        let vastus = Math.ceil((ainepunktid * 26) / n2dalad)
+        let vastus = Math.round((ainepunktid * 26) / n2dalad)
         console.log(vastus)
         rl.close()
     })
