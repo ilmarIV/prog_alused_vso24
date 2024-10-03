@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 rl.question('sisestage ringide arv: ', laps => {
     let carrots = 0
     for (let i = 1; i <= laps; i++) {
-        if (i % 2 == 0){
+        if (i % 2 === 0){
             carrots += i
         }
     }
