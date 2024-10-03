@@ -12,7 +12,7 @@ function randomInteger(min, max) {
   }
 */
 function rollDie() {
-    return Math.floor(Math.random() * 6) + 1;
+    return Math.ceil(Math.random() * 6)
   }
 
 rl.question('sisestage t2ringute arv: ', dice => {

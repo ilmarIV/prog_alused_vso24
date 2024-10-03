@@ -12,7 +12,7 @@ function randomInteger(min, max) {
   }
 */
 function drawApples() {
-    return Math.floor(Math.random() * 2) + 1;
+    return Math.ceil(Math.random() * 2)
 }
 
 let totalApples = 14
