@@ -18,7 +18,6 @@ function rollDie() {
 rl.question('sisestage t2ringute arv: ', dice => {
     for (let i = 0; i < dice; i++) {
         console.log(rollDie())
-        rollDie()
     }
     rl.close()
 })
